@@ -14,13 +14,13 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: josecastillolema/mysql
+          image: rafaelbrunors/mysql
           imagePullPolicy: Always
           ports:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: senhaFiap
+              value: fiap12345
 #         volumeMounts:
 #         - name: mysql-persistent-storage
 #           mountPath: /var/lib/mysql
